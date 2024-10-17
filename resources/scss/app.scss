@@ -1,13 +1,17 @@
 @import '~bootstrap/scss/bootstrap';
 
 main {
-    background-image: url('../img/testimg.webp');
-    background-repeat: no-repeat;
-    h1 {
-        color: lightcoral;
-    }
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 	#003663;
 
-    img {
-        height: 335px;
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 15px 10px;
+        width: 310px;
     }
 }
+
