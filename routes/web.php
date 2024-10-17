@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,14 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    $testText = 'Test 123456';
-
-    return view('welcome', [
-        'test' => $testText
-    ]);
-})->name('index');
-
+Route::get('/', [PageController::class, 'index']);
 
 Route::get('/about', function () {
     $testTest2 = '456789';

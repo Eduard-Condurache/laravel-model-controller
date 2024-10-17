@@ -22,21 +22,5 @@
 @endphp
 
 <header>
-    <nav>
-        <ul>
-            @foreach($links as $link) 
-            <li>
-                @if($link['active'])
-                    <a href="{{ route($link['route_name']) }}">
-                        {{ $link['label'] }}
-                    </a>
-                @else
-                    <del>
-                        {{ $link['label'] }}
-                    </del>
-                @endif    
-            </li>
-            @endforeach
-        </ul>
-    </nav>
+    
 </header>
